@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Head">Haading</h1>
+    <p id="Parag">Paragraph</p>
+
+    <button class="btn" onclick="myFunction()">Save</button>
+</body>
+<script>
+function myFunction() {
+let arr=["abc","xyz","abc","pqr","abc","try","xyz"];
+let count=0;
+let xyzcount=0;
+let pqrcount=0;
+for (let index = 0; index < arr.length; index++) {
+    
+    const element = arr[index];
+    if (element==="abc") {
+        count++;
+            // console.log("abc",count);
+    }
+else if(element==="xyz")
+{
+ xyzcount++;
+            // console.log("xyz",xyzcount);
+}
+else if(element==="pqr")
+{
+pqrcount++;
+}
+    console.log("abc",count);  
+    console.log("xyz",xyzcount);  
+    console.log("pqr",pqrcount);  
+}
+}
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add</button>
+    <button onclick="xyz()">Change</button>
+    <br>
+    <hr>
+    <input type="checkbox" name="edu" id="edu">10th
+    <input type="checkbox" name="edu" id="edu">12th
+    <input type="checkbox" name="edu" id="edu">BCA
+    <input type="checkbox" name="edu" id="edu">MCA
+    <script>
+         document.getElementsByName("edu")[0].checked = true
+        document.getElementsByName("edu")[2].checked = true
+        document.getElementsByName("edu")[3].checked = true
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50,20]
+        let res = arr.map((i,index) => {
+            return i * 2
+        })
+        document.write('<br>'+arr)
+        document.write('<br>'+res)
+
+        
+        let ans = arr.filter((a, b) => {
+            return a == 20
+        })
+       
+
+        consol.log ("filter func called ...");
+        console.log(ans);
+        res = arr.find((a,b) => {
+            return a == 20
+        })
+
+        console.log ("find func called...");
+        console.log(res);
+
+        let total = arr.reduce((i, j) =>{
+            return i + j
+        }) 
+        document.write('<br> total is '+ total)
+
+
+     
+    </script>
+</body>
+</html>

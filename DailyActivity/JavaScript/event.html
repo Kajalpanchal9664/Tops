@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Event Litstener Example </h3>
+    <div id="demo"></div>
+
+    <script>
+        let ultag = document.createElement("ul")
+        let litag = document.createElement("li")
+        let litag2 = document.createElement("li")
+        let litag3 = document.createElement("li")
+        let litag4 = document.createElement("li")
+        document.getElementById('demo').append(ultag)
+        ultag.appendChild(litag)
+        ultag.appendChild(litag2)
+        ultag.appendChild(litag3)
+        ultag.appendChild(litag4)
+        let txt = document.createTextNode("Abcd")
+        litag.append(txt)
+        litag2.append("xyz")
+        litag3.append("jkl")
+        litag4.append("efg")
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login System</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 50px;">
+
+  <h1>🔐 Login System</h1>
+
+  <!-- Input Fields -->
+  <input type="text" id="username" placeholder="Enter Username"><br><br>
+  <input type="password" id="password" placeholder="Enter Password"><br><br>
+
+  <!-- Button -->
+  <button onclick="loginCheck()">Login</button>
+
+  <!-- Output Area -->
+  <h2 id="message"></h2>
+    <h2 id="message1"></h2>
+
+  <script>
+    // 🔹 const → fixed values
+    const correctUser = "admin";
+    const correctPass = "12345";
+
+    // 🔹 function keyword
+    function loginCheck() {
+      // 🔹 let → variables
+      let user = document.getElementById("username").value;
+      let pass = document.getElementById("password").value;
+
+      // 🔹 if else keyword
+      if(user === correctUser) {
+        document.getElementById("message").innerHTML = "✅ Login Successful! Welcome " + user;
+      }
+      else if(pass === correctPass)
+      {
+                document.getElementById("message").innerHTML = "✅ Login Successful! Welcome " + pass;
+      }
+      else {
+        document.getElementById("message").innerHTML = "❌ Invalid Username !";
+      }
+    if(pass === correctPass) 
+      {
+                document.getElementById("message1").innerHTML = "✅ Username Successful! Welcome " + user;
+      }
+      else {
+        document.getElementById("message1").innerHTML = "❌ Invalid Password!";
+      }
+    }
+
+    // 🔹 try catch keywords → error handling
+    try {
+      console.log(notDefined); // ये error देगा
+    } catch(error) {
+      console.log("Error handled: " + error);
+    } finally {
+      console.log("Finally block always runs");
+    }
+  </script>
+
+</body>
+</html>
